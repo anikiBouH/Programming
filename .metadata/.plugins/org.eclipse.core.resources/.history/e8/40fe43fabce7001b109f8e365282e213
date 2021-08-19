@@ -1,0 +1,52 @@
+#include <stdio.h>
+int countWage(int income, int months, int daysInMonths,
+			  int hoursInDay, int bonus,int premium, int rise, int actuallyWorkedHours)
+int countRisePay(int rise, int months);
+int countOverTime(int totalHours, int months, int daysInMonths, int hoursInDay);
+int countOverTimePay(int totalHours, int wage);
+int countBonusPay(int salary, int bonus);
+int countRegularHours(int months, int daysInMonths, int hoursInDay);
+
+int main()
+{
+countWage()
+	return 0;
+}
+
+int countWage(int income, int months, int daysInMonths,
+			  int hoursInDay, int bonus,int premium, int rise, int actuallyWorkedHours)
+{
+	//wage = (income - risePay - overTimePay - premium - bonusPay),
+	int res = (income - countRisePay(rise, months)-premium)
+			    /(countRegularHours(months,daysInMonths,hoursInDay)
+			    		+countRegularHours(months,daysInMonths,hoursInDay)*bonus/100
+			    		 	 +countOverTime(actuallyWorkedHours,months,daysInMonths,hoursInDay)*2);
+	return res;
+}
+int countRisePay(int rise, int months)
+{
+	int res = rise * months;
+	return res;
+}
+int countOverTime(int totalHours, int months, int daysInMonths, int hoursInDay)
+{
+	int res = tatalHours - countRegularHours(months,daysInMonths,hoursInDay);
+	return res;
+}
+int countOverTimePay(int totalHours, int wage)
+{
+	int res = countOverTime(totalHours) * wage * 2;
+	return res;
+}
+int countBonusPay(int salary, int bonus)
+{
+	int res = salary * bonus / 100;
+	return res;
+}
+
+int countRegularHours(int months, int daysInMonths, int hoursInDay)
+{
+	res = months * daysInMonth * hoursInDay;;
+	return res;
+;
+}

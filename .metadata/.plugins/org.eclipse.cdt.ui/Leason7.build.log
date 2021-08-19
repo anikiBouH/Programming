@@ -1,0 +1,8 @@
+
+**** Rebuild of configuration Debug for project Leason7 ****
+
+**** Internal Builder is used for build               ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -oFirst.o ..\First.c
+gcc -oLeason7.exe First.o
+Build complete for project Leason7
+Time consumed: 434  ms.  

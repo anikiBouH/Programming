@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+	int number = 3;
+	do
+	{
+		printf("%d\n", number %2);
+		number /= 2;
+	} while (number !=0);
+
+	return 0;
+}
+

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;lesson11/homeWorkAdvance.c&apos; to &apos;homeWorkAdvance&apos;" description="Rename resource &apos;homeWorkAdvance.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="homeWorkAdvance.c" name="homeWorkAdvance" stamp="1627671197840" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;lesson11/homeWorkAdvance&apos; to &apos;homeWorkAdvance.c&apos;" description="Rename resource &apos;homeWorkAdvance&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="homeWorkAdvance" name="homeWorkAdvance.c" stamp="1627672466687" updateReferences="true"/>
+</session>

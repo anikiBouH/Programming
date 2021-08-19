@@ -1,0 +1,44 @@
+/*
+ * Company.c
+ *
+ *  Created on: 14.07.2021
+ *      Author: Виктория
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+struct worker
+{
+	char name[50];
+	float rate_in_hour;
+	float bonus_in_month;
+	float premium;
+
+}p1, p2, p3;
+
+void init(struct worker *employee);
+
+int main()
+{
+	init(&p1);
+	printf("Имя работника %50s \n", p1.name);
+	printf("Cтавка ($ вчас) %f\n", p1.rate_in_hour);
+	printf("%% бонуса %f\n", p1.bonus_in_month);
+	printf("Премию %f\n", p1.premium);
+
+	return 0;
+}
+
+void init(struct worker *employee)
+{
+	printf("Введите имя работника\n");
+	scanf("%50s", (*employee).name);
+	printf("Введите ставку ($ вчас)\n");
+	scanf("%f", &(*employee).rate_in_hour);
+	printf("Введите %% бонуса\n");
+	scanf("%f", &(*employee).bonus_in_month);
+	printf("Введите премию\n");
+	scanf("%f", &(*employee).premium);
+}
+

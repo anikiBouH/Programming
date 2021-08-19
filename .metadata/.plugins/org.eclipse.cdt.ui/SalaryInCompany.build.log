@@ -1,0 +1,15 @@
+
+**** Build of configuration Debug for project SalaryInCompany ****
+
+**** Internal Builder is used for build               ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -ocompany.o ..\company.c
+gcc -oSalaryInCompany.exe company.o Company.o
+Company.o: In function `main':
+D:\Programming\SalaryInCompany\Debug/../company.c:23: multiple definition of `main'
+company.o:D:\Programming\SalaryInCompany\Debug/../company.c:23: first defined here
+Company.o: In function `init':
+D:\Programming\SalaryInCompany\Debug/../company.c:34: multiple definition of `init'
+company.o:D:\Programming\SalaryInCompany\Debug/../company.c:34: first defined here
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 661  ms.  

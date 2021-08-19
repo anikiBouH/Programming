@@ -1,0 +1,15 @@
+#include <stdio.h>
+struct worker
+{
+	char name[50];
+	float rate_in_hour;
+	float bonus_in_month;
+	float premium;
+
+}
+
+int main()
+{
+
+	return 0;
+}

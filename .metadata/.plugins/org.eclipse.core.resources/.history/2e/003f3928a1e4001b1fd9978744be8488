@@ -1,0 +1,29 @@
+#include <stdio.h>
+struct worker
+{
+	char name[50];
+	float rate_in_hour;
+	float bonus_in_month;
+	float premium;
+
+}p1,p2,p3;
+
+void init( struct worker employee);
+
+int main()
+{
+	p1 = init();
+	return 0;
+}
+
+void init( struct worker employee)
+{
+	printf("¬ведите им€ работника\n");
+	scanf("%s", employee.name);
+	printf("¬ведите ставку ($ вчас)\n");
+	scanf("%f", employee.rate_in_hour);
+	printf("¬ведите % бонуса\n");
+	scanf("%f", employee.bonus_in_month);
+	printf("¬ведите премию\n");
+	scanf("%f", employee.premium);
+}

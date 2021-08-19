@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+
+
+	return 0;
+}
+/*
+ * Homework :
+ * 1.
+ * int timeOnRoute(int lineNumber)
+ * lineNumber - 3 -> 109 min
+ *              45 -> 57 min
+ *              37 -> 123 min
+ *              5 ->  45 min
+ *
+ * 2.
+ *  int trafficDelay(float time)
+ *
+ *  [5.00]- 7.30 -> 15 min
+ *   [7.30] - [9.45] -> 32 min
+ *   9.45 - [11.30] -> 22 min
+ *   11.30 - [13.30] -> 10 min
+ */

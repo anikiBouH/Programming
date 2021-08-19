@@ -1,0 +1,26 @@
+/*
+ ============================================================================
+ Name        : Test.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+	int x=0; y=0;
+	for(y=0;y<=0;y++)
+	{
+		for(x=0;x<=0;x++)
+			{
+			printf("%d\t", x+y);
+			}
+
+	}
+	return EXIT_SUCCESS;
+}

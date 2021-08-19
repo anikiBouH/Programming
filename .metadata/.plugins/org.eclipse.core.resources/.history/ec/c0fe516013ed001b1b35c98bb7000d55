@@ -1,0 +1,172 @@
+/*
+Homework
+ 	 *** DONE ***
+ 	1. Update function countOverTime() with the condition -
+ the function should return 0 when overTime <= 0 without counting.
+ 	 *** NOT DONE **
+ 	2. Count and print wage and bonusPay for every employee,
+ using service functions. Place related code into the corresponding
+ block in main()
+ 	3. Count premium for Mary
+ 	4. Count tax for every employee (15% from wage and 20%
+ from any extra payments)
+ 	5. Assign an id to each employee (for Tom id = 1, etc.)
+	6. Assign for each of the three data types (wage, bonusPay, income) its dataType code
+(for wage: dataType = 1, etc.)
+	7. Create and place in the Functions block the common print function named printFunction(),
+using switch/case functionality, and pass there - id, dataType, value to print the necessary information:
+<name> <data type> <value>. Expected result: Tom wage = 60.
+	8. Replace the print functions for each employee for wage, bonusPay with a common function
+named printFunction(), passing the appropriate parameters into it.
+	9. Write a common scanf() function, named scanFunction() and place it in the Functions
+block
+	10. Sequentially request id, dataType from the user through the scanFunction() and then
+print the corresponding information in the console.
+
+*/
+
+#include<stdio.h>
+float countWage(float income, float premium, float rise,
+		float hours, float bonus, float overTime);
+float countRegularHours(float quarter, float month, float day);
+float countBonusPay(float hours, float bonus, float wage);
+float countOverTimePay(float overTime, float wage);
+float countOverTime(float regularHours, float actualHours);
+float countRisePay(float rise, float quarter);
+float countTax(float salaryRegular, float extraPayments);
+void printInfo(float income, float wage, float bonusPay,float overTimePay, float premium, float risePay,  float tax);
+
+int main()
+{
+//	float wageTom = countWage(39000, 0, 520, 480, 30, 0); // test
+//	printf("Wage Tom = %.2f", wageTom);
+	/**** Common data ****/
+
+	float quarter = 3;
+	float month = 20;
+	float day = 8;
+
+	/****** Tom *****/
+	printf("Tom\n");
+	int TomId = 1;
+	float TomIncome = 39000;
+	float TomPremium = 0;
+	float TomRegularBonus = 30;
+	float TomActualBonus = TomRegularBonus / 1.5;
+	float TomRise = 520;
+	float TomRegularHours = countRegularHours(quarter,month,day);
+	float TomActualHours = TomRegularHours/3*2.5;
+	float TomOverTime = countOverTime(TomRegularHours, TomActualHours);
+	float TomWage = countWage(TomIncome,TomPremium,TomRise,
+								TomRegularHours,TomRegularBonus,TomOverTime);
+	float TomBonusPay = countBonusPay(TomActualHours,TomActualBonus, TomWage);
+	float TomRisePay = countRisePay(TomRise,quarter);
+	float TomOverTimePay = countOverTimePay(TomOverTime, TomWage);
+	float TomTax = countTax(TomWage*TomActualHours, TomBonusPay + TomRisePay + TomOverTimePay + TomPremium);
+
+	printInfo(TomIncome,TomWage,TomBonusPay,TomOverTimePay,TomPremium,TomRisePay,TomTax);
+
+
+	/****** Mary *****/
+	printf("Mary\n");
+	int MaryId = 2;
+	float MaryIncome = 31000;
+	float MaryRegularBonus = 25;
+	float MaryActualBonus = MaryRegularBonus;
+	float MaryRise = 0;
+	float MaryRisePay = countRisePay(MaryRise,quarter);
+	float MaryRegularHours = countRegularHours(quarter,month,day);
+	float MaryActualHours = 500;
+	float MaryWage = (TomWage +15 + 5) / 2;
+	float MaryBonusPay = countBonusPay(MaryRegularHours,MaryActualBonus, MaryWage);
+	float MaryOverTime = countOverTime(MaryRegularHours, MaryActualHours);
+	float MaryOverTimePay = countOverTimePay(MaryOverTime, MaryWage);
+	float MaryPremium = MaryIncome - MaryWage*MaryRegularHours - MaryBonusPay - MaryRisePay - MaryOverTimePay;
+	float MaryTax = countTax(MaryWage*MaryRegularHours,MaryBonusPay + MaryRisePay+MaryOverTimePay + MaryPremium);
+
+	printInfo(MaryIncome,MaryWage,MaryBonusPay,MaryOverTimePay,MaryPremium,MaryRisePay,MaryTax);
+
+	//float MaryTax = countTax(MaryWage*MaryActualHours, MaryBonusPay + MaryRisePay+MaryOverTimePay);
+	//printf("Tax = %.2f\n", MaryTax);
+
+	/****** John *****/
+	printf("John\n");
+	int JohnId = 3;
+	float JohnRegularHours = countRegularHours(quarter,month - 5,day);
+	float JohnActualHours = JohnRegularHours;
+	float JohnWage = MaryWage - 5;
+	float JohnRegularBonus = TomRegularBonus / 1.5;
+	float JohnActualBonus = JohnRegularBonus;
+	float JohnBonusPay = countBonusPay(JohnActualHours,JohnActualBonus, JohnWage);
+	float JohnPremium = 0;
+	float JohnRise = 0;
+	float JohnRisePay = countRisePay(JohnRise,quarter);
+	float JohnOverTime = countOverTime(JohnRegularHours, JohnActualHours);
+	float JohnOverTimePay = countOverTimePay(JohnOverTime, JohnWage);
+	float JohnTax = countTax(JohnWage*JohnActualHours, JohnBonusPay + JohnRisePay + JohnOverTimePay + JohnPremium);
+	float JohnIncome = JohnWage*JohnActualHours + JohnBonusPay + JohnRisePay + JohnOverTimePay + JohnPremium;
+
+	printInfo(JohnIncome,JohnWage,JohnBonusPay,JohnOverTimePay,JohnPremium,JohnRisePay,JohnTax);
+
+	return 0;
+}
+
+	/********* Service functions *********/
+void printInfo(float income, float wage, float bonusPay,float overTimePay, float premium, float risePay,  float tax)
+{
+	printf("Wage = %.2f\n", wage);
+	printf("Bonus pay = %.2f\n", bonusPay);
+	printf("Overtime pay = %.2f\n", overTimePay);
+	printf("Premium = %.2f\n", premium);
+	printf("Rise pay = %.2f\n", risePay);
+	printf("Tax = %.2f\n", tax);
+}
+
+float countRegularHours(float quarter, float month, float day)
+{
+	float res = quarter * month * day;
+	return res;
+}
+
+
+float countBonusPay(float hours, float bonus, float wage)
+{
+	float res = hours * bonus * wage / 100;
+	return res;
+}
+
+float countOverTimePay(float overTime, float wage)
+{
+	float res = overTime * wage * 2;
+	return res;
+}
+
+float countOverTime(float regularHours, float actualHours)
+{
+	if (regularHours >= actualHours ) {return 0;}
+	float res = actualHours - regularHours;
+
+	return res;
+}
+
+float countRisePay(float rise, float quarter)
+{
+	float res = rise * quarter;
+	return res;
+}
+
+float countWage(float income, float premium, float rise,
+		float hours, float bonus, float overTime)
+{
+	float res = (income - premium - rise * 3) / (hours + hours * bonus/100 + overTime * 2);
+
+	return res;
+}
+
+float countTax(float salaryRegular, float extraPayments)
+{
+	float res=0;
+	res = salaryRegular*0.15 + extraPayments*0.2;
+	return res;
+}
+

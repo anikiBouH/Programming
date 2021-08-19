@@ -1,0 +1,22 @@
+#include <stdio.h>.
+
+
+int main(void)
+{
+
+}
+
+void taxi(int code)
+{
+	if(code == 1)
+			printf("Haim, Go!\n");
+	if(code == 2)
+			printf("David, Go!\n");
+	if(code == 3)
+			printf("Hanna, Go!\n");
+	if(code == 4)
+			printf("Alex, Go!\n");
+	if(code == 5)
+			printf("Ilana, Go!\n");
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;func_call/call_func&apos; to &apos;call_func.c&apos;" description="Rename resource &apos;call_func&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="call_func" name="call_func.c" stamp="1625520253745" updateReferences="true"/>
+</session>

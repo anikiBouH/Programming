@@ -1,0 +1,97 @@
+package lesson16;
+
+public class HomeWork {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		
+		int a = 0;
+		int res = a>=0?Integer.toString(a).length():Integer.toString(a).length()-1;
+		System.out.println(res);
+		System.out.println(calculator( 6.5564, 2, '/'));
+		printStars(5);
+		
+		int n = 0;
+		System.out.println("number of digits of a "+n);
+		System.out.println(digitsCount(n));
+		System.out.println(digitsCount2(n));
+		System.out.println(digitsCount3(n));
+	}
+	public static double calculator(double num1, double num2, char action)
+	{
+		
+		double res = 0;
+		if (action == '+') 
+		{
+			res = num1+num2;
+			return res;
+		}
+		if (action == '-')
+		{
+			res = num1-num2;
+			return res;
+		}
+		if (action == '*')
+		{
+			res = num1*num2;
+			return res;
+		}
+		if (action == '/') 
+		{
+			if (num2 != 0)
+				{
+			 		res = num1/num2;
+			 		return res;
+				}
+			else 
+			{
+				System.out.println("Error: Devided by zero");
+				return 0;
+			}
+		 
+		}
+		System.out.println("Error: Wrong action");
+		return res;
+	}
+	
+	public static void printStars(int stars)
+	{
+		for (int i = 0; i<stars; i++)
+		{
+			System.out.print('*');
+		}
+		System.out.println();
+	}
+	public static int digitsCount(int number)
+	{
+		int res = 0;
+		do
+		{
+			res++;
+			number /= 10;
+		} while (number !=0);
+		
+		return res;
+	}
+	
+	public static int digitsCount2(int number)
+	{
+		int res = number>=0?Integer.toString(number).length():Integer.toString(number).length()-1;
+		return res;
+	}
+	
+	 public static int digitsCount3(int n) {
+		 	n = Math.abs(n);
+	        if (n>=1000000000) {return 10;}
+	        else if (n>=100000000) {return 9;}
+	        else if (n>=10000000) {return 8;}
+	        else if (n>=1000000) {return 7;}
+	        else if (n>=100000) {return 6;}
+	        else if (n>=10000) {return 5;}
+	        else if (n>=1000) {return 4;}
+	        else if (n>=100) {return 3;}
+	        else if (n>=10) {return 2;}	
+	        else {return 1;}
+	    }
+}

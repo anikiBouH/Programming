@@ -1,0 +1,8 @@
+
+**** Rebuild of configuration Debug for project Leasson8 ****
+
+**** Internal Builder is used for build               ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -oLeason.o ..\Leason.c
+gcc -oLeasson8.exe Leason.o
+Build complete for project Leasson8
+Time consumed: 687  ms.  

@@ -1,0 +1,38 @@
+#include <stdio.h>
+int countWage();
+int countRisePay();
+int countOverTime();
+int countOverTimePay();
+int countBonusPay();
+int countRegularHours();
+
+int main()
+{
+
+	return 0;
+}
+
+int countWage()
+{
+	return 0;
+}
+int countRisePay()
+{
+	return 0;
+}
+int countOverTime()
+{
+	return 0;
+}
+int countOverTimePay()
+{
+	return 0;
+}
+int countBonusPay()
+{
+	return 0;
+}
+int countRegularHours(int months, int daysInMonths, int hoursInDay)
+{
+	return ;
+}

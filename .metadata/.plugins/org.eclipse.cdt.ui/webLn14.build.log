@@ -1,0 +1,10 @@
+
+**** Rebuild of configuration Debug for project webLn14 ****
+
+**** Internal Builder is used for build               ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -oarrays.o ..\arrays.c
+..\arrays.c: In function 'main':
+..\arrays.c:7: warning: unused variable 'tmp'
+gcc -owebLn14.exe arrays.o
+Build complete for project webLn14
+Time consumed: 349  ms.  

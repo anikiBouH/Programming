@@ -1,0 +1,19 @@
+#include <stdio.h>
+float salary(float hours, float wage, float tax, float bonus);
+float exchange(float amount, float rate, float commission);
+
+int main()
+{
+
+	return 0;
+}
+
+float exchange(float amount, float rate, float commission)
+{
+	return amount*rate*(1-commission/100);
+}
+
+float salary(float hours, float wage, float tax, float bonus)
+{
+	return hours*wage*(1+bonus/100)*(1-tax/100);
+}

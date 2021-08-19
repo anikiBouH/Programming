@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+	int arr[5] = {1,2,3,4,5};
+	printf("%x\n",arr);
+	int i;
+	for (i = 0; i < 5; i++)
+	{
+		printf("ar[%d] = %x\n", i, &arr[i]);
+	}
+	return 0;
+}

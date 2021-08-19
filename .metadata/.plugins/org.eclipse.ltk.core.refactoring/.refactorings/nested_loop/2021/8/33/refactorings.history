@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;nested_loop/loop_nested&apos; to &apos;loop_nested.c&apos;" description="Rename resource &apos;loop_nested&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="loop_nested" name="loop_nested.c" stamp="1628524271843" updateReferences="true"/>
+</session>

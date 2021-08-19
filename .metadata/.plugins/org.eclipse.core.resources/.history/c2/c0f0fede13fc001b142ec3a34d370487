@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main()
+{
+
+	float tmp[] = {50, 40, 45};
+
+	int arr[7]= {};
+	return 0;
+}

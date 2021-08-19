@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+void taxi(int code);
+int main(void)
+{
+	taxi(9);
+	return 0;
+}
+
+void taxi(int code)
+{
+	if(code == 1)
+			printf("Haim, Go!\n");
+	if(code == 2)
+			printf("David, Go!\n");
+	if(code == 3)
+			printf("Hanna, Go!\n");
+	if(code == 4)
+			printf("Alex, Go!\n");
+	if(code == 5)
+			printf("Ilana, Go!\n");
+	 switch(code)
+	  {
+	 	 case 1: printf("Haim, Go!\n"); break;
+	 	 case 2: printf("David, Go!\n"); break;
+	 	 case 3: printf("Hanna, Go!\n"); break;
+	 	 case 4: printf("Alex, Go!\n"); break;
+	 	 case 5: printf("Ilana, Go!\n"); break;
+	 	 default: printf("Error"); break;
+	   }
+
+
+}

@@ -1,0 +1,25 @@
+
+**** Rebuild of configuration Debug for project to_be ****
+
+**** Internal Builder is used for build               ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -oHello_course_v1.o ..\Hello_course_v1.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -oHello_course_v2.o ..\Hello_course_v2.c
+gcc -oto_be.exe Hello_course_v2.o Hello_course_v1.o
+Hello_course_v1.o: In function `main':
+D:\Programming\to_be\Debug/../Hello_course_v1.c:8: multiple definition of `main'
+Hello_course_v2.o:D:\Programming\to_be\Debug/../Hello_course_v2.c:8: first defined here
+Hello_course_v1.o: In function `f1':
+D:\Programming\to_be\Debug/../Hello_course_v1.c:20: multiple definition of `f1'
+Hello_course_v2.o:D:\Programming\to_be\Debug/../Hello_course_v2.c:20: first defined here
+Hello_course_v1.o: In function `f2':
+D:\Programming\to_be\Debug/../Hello_course_v1.c:25: multiple definition of `f2'
+Hello_course_v2.o:D:\Programming\to_be\Debug/../Hello_course_v2.c:25: first defined here
+Hello_course_v1.o: In function `f3':
+D:\Programming\to_be\Debug/../Hello_course_v1.c:29: multiple definition of `f3'
+Hello_course_v2.o:D:\Programming\to_be\Debug/../Hello_course_v2.c:29: first defined here
+Hello_course_v1.o: In function `f4':
+D:\Programming\to_be\Debug/../Hello_course_v1.c:34: multiple definition of `f4'
+Hello_course_v2.o:D:\Programming\to_be\Debug/../Hello_course_v2.c:34: first defined here
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 618  ms.  

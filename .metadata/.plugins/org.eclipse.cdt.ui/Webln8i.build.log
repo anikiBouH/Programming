@@ -1,0 +1,8 @@
+
+**** Rebuild of configuration Debug for project Webln8i ****
+
+**** Internal Builder is used for build               ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -oSourceWeb.o ..\SourceWeb.c
+gcc -oWebln8i.exe SourceWeb.o
+Build complete for project Webln8i
+Time consumed: 377  ms.  

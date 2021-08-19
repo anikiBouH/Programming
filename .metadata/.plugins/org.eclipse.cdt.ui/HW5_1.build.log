@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug for project HW5_1 ****
+
+**** Internal Builder is used for build               ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -of1.o ..\f1.c
+gcc -oHW5_1.exe f1.o
+Build complete for project HW5_1
+Time consumed: 364  ms.  
