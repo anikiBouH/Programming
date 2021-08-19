@@ -5,7 +5,8 @@ public class HomeWork {
 	public static void main(String[] args) 
 	{
 				
-		System.out.println(calculator( 6, 0, 'x'));
+		System.out.println(calculator( 6, 0, 'n'));
+		
 //		printStars(5);
 		
 //		int n = 0;
@@ -70,8 +71,7 @@ public class HomeWork {
 		
 		}
 		catch(Exception e) {
-			
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 		return res;
 	}
