@@ -1,0 +1,6 @@
+D:\Programming\Cinemaadviser\bin\Debug\Cinemaadviser.exe.config
+D:\Programming\Cinemaadviser\bin\Debug\Cinemaadviser.exe
+D:\Programming\Cinemaadviser\bin\Debug\Cinemaadviser.pdb
+D:\Programming\Cinemaadviser\obj\Debug\Cinemaadviser.csproj.CoreCompileInputs.cache
+D:\Programming\Cinemaadviser\obj\Debug\Cinemaadviser.exe
+D:\Programming\Cinemaadviser\obj\Debug\Cinemaadviser.pdb
