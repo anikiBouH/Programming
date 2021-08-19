@@ -1,0 +1,30 @@
+#include <stdio.h>
+float salary(float hours, float wage, float tax, float bonus);
+float exchange(float amount, float rate, float commission);
+float testFloatToDouble(double num1, double num2);
+
+int main()
+{
+	float res1 = exchange(300, 3.3, 1);
+	printf("%.2f",res1);
+	float res2 = salary(182,90,5,12);
+	printf("%.2f",res2);
+
+	printf("%f",testFloatToDouble(res1,res2));
+	return 0;
+}
+
+float exchange(float amount, float rate, float commission)
+{
+	return amount*rate*(1-commission/100);
+}
+
+float salary(float hours, float wage, float tax, float bonus)
+{
+	return hours*wage*(1+bonus/100)*(1-tax/100);
+}
+
+float testFloatToDouble(double num1, double num2)
+{
+	return 0;
+}

@@ -1,0 +1,75 @@
+
+#include <stdio.h>
+void multiplication_table();
+
+int main()
+{
+   multiplication_table();
+	return 0;
+}
+void multiplication_table()
+{
+	int i,j;
+	for(j = 1 ; j <= 10; j++)
+	{
+		for(i = 1; i <= 10;i++)
+		{
+		printf("%dx%d=%d\t",j,i,i*j);
+		}
+		printf("\n");
+	}
+}
+/*
+ *  Homework :
+ *
+ *  1.
+ void multiplication_table(int x,int y)
+ *
+ *  ----> x = 15
+ * |
+ * |
+ * |
+ * y = 15
+ 2.
+
+  *******
+  **    *
+  ***   *
+  ****  *
+  ***** *
+  *******
+  *******
+3.
+  *******
+  *******
+  ***** *
+  ****  *
+  ***   *
+  **    *
+  *******
+4.
+   *******
+   *******
+   * *** *
+   *  *  *
+   * *** *
+   *******
+   *******
+
+advanced
+    magen david
+
+
+
+
+ */
+/*
+ * i->i       i       i          i                                i
+ * j 1x1=1	1x2=2	1x3=3 ....1x10=10
+ *   2x1=2	2x2=4 ............2x10=20
+ *   .................................
+ * j 10x1=10..................10x10=100
+ *
+ *
+ *
+ */

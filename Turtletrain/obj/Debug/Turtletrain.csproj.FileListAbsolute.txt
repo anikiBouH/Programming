@@ -1,0 +1,10 @@
+D:\Programming\Turtletrain\bin\Debug\Turtletrain.exe.config
+D:\Programming\Turtletrain\bin\Debug\Turtletrain.exe
+D:\Programming\Turtletrain\bin\Debug\Turtletrain.pdb
+D:\Programming\Turtletrain\bin\Debug\SmallBasicLibrary.dll
+D:\Programming\Turtletrain\bin\Debug\SmallBasicLibrary.xml
+D:\Programming\Turtletrain\obj\Debug\Turtletrain.csprojAssemblyReference.cache
+D:\Programming\Turtletrain\obj\Debug\Turtletrain.csproj.CoreCompileInputs.cache
+D:\Programming\Turtletrain\obj\Debug\Turtletrain.csproj.CopyComplete
+D:\Programming\Turtletrain\obj\Debug\Turtletrain.exe
+D:\Programming\Turtletrain\obj\Debug\Turtletrain.pdb

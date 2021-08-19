@@ -1,0 +1,10 @@
+D:\Programming\TurtleGame\bin\Debug\TurtleGame.exe.config
+D:\Programming\TurtleGame\bin\Debug\TurtleGame.exe
+D:\Programming\TurtleGame\bin\Debug\TurtleGame.pdb
+D:\Programming\TurtleGame\bin\Debug\SmallBasicLibrary.dll
+D:\Programming\TurtleGame\bin\Debug\SmallBasicLibrary.xml
+D:\Programming\TurtleGame\obj\Debug\TurtleGame.csprojAssemblyReference.cache
+D:\Programming\TurtleGame\obj\Debug\TurtleGame.csproj.CoreCompileInputs.cache
+D:\Programming\TurtleGame\obj\Debug\TurtleGame.csproj.CopyComplete
+D:\Programming\TurtleGame\obj\Debug\TurtleGame.exe
+D:\Programming\TurtleGame\obj\Debug\TurtleGame.pdb

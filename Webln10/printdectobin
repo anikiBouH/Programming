@@ -1,0 +1,75 @@
+#include <stdio.h>
+void printDecToBin1(int num);
+void printDecToBin2(int n);
+void printDecToBin3(int n);
+int main()
+{
+
+	int n = 18;
+
+	printDecToBin1(n);
+	printDecToBin2(n);
+    printDecToBin3(n);
+
+	return 0;
+}
+
+void printDecToBin3(int n)
+{
+	unsigned int bit = 0b10000000;
+	int count = 0;
+	while (count <8)
+	{
+		if (n & bit)
+		{
+			printf("1");
+		}
+		else
+		{
+			printf("0");
+		}
+		bit = bit >> 1;
+		count++;
+		}
+}
+
+void printDecToBin2 (int n)
+{
+	int arr[8] = {0};
+	int i = 0;
+	while (n)
+	{
+		arr[i] = n & 1;
+		i++;
+		n >>= 1;
+	}
+	int j;
+	for (j=7; j>=0; j--)
+	{
+		printf("%d", arr[j]);
+	}
+
+	printf("\n");
+}
+
+void printDecToBin1(int num)
+{
+	int bit = 0;
+	int shift = 1;
+	int count = 0;
+
+	do
+	{
+		bit = bit + (num % 2) * shift; //= 1
+		shift = shift * 10;
+		num = num / 2;
+		count ++;
+	}while(num != 0);
+
+	while(count < 8)
+	{
+		printf("0");
+		count++;
+	}
+	printf("%d\n", bit);
+}

@@ -1,0 +1,100 @@
+/*
+Homework
+	1. Implement function which is checking if the entered number
+is in range (0 - 9). If yes - should call the function from point 2.
+If not - should notify user and suggest to enter correct number.
+	2. Implement function which is checking if the entered number
+is equal to secretNumber. If yes - should congratulate user.
+If not - should notify user and suggest to try again.
+
+*/
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+
+
+int isWin(int start, int finish, int actualNumber, int secretNumber);
+int isEqualToSecret (int n, int sn);
+int invitation (int start, int finish);
+int isCountAttempts (int count);
+void greaterOrLess(int n, int sn);
+
+int main ()
+{
+	srand(time(NULL));
+	int range = 10; // можно быстро менять интервал чисел
+	int secretNumber = rand() % range;
+	int rangeStart = 0;
+	int rangeFinish = range - 1;
+	int attempts = 10; //количество попыток
+
+
+	do{
+
+	}while ((!isWin( rangeStart, rangeFinish,
+					invitation(rangeStart,rangeFinish),
+					secretNumber))&&(isCountAttempts(--attempts))); //можно добавить запрос, продолжить или нет
+	return 0;
+}
+
+int isCountAttempts (int count)
+{
+	switch (count)
+	{
+		case 1: printf("You have 1 attempt left\n"); break;
+		case 0: printf("You have no attempts left\n"); break;
+		default: printf("Number of attempts = %d\n", count); break;
+	}
+
+	return count;
+}
+int invitation (int start, int finish)
+{
+		int n;
+		printf("Enter your number from %d to %d:\n", start, finish);
+
+		fflush(stdout);
+		scanf("%d", &n);
+		return n;
+}
+int isWin(int start, int finish, int actualNumber, int secretNumber)
+{
+
+	if ((actualNumber>=start)&&(actualNumber<=finish))
+			{
+				return isEqualToSecret(actualNumber, secretNumber)? 1:0;
+			}
+		else
+			{
+				printf("ERROR: number is not in range\n");
+				return 0;
+			}
+
+}
+
+int isEqualToSecret (int n, int sn)
+{
+	if (n==sn)
+		{
+		 	 printf("You win!\n");
+		 	 return 1;
+		}
+	else
+		{
+			printf("You lose! Try again\n");
+			greaterOrLess(n,sn);
+			return 0;
+		}
+}
+
+void greaterOrLess(int n, int sn)
+{
+	if (n<sn)
+	{
+		printf("The hidden number is greater\n");
+	}
+	else
+	{
+		printf("The hidden number is less\n");
+	}
+}
