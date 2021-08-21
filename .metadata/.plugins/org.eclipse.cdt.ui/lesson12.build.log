@@ -1,8 +1,0 @@
-
-**** Rebuild of configuration Debug for project lesson12 ****
-
-**** Internal Builder is used for build               ****
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -oclassWork.o ..\classWork.c
-gcc -olesson12.exe classWork.o
-Build complete for project lesson12
-Time consumed: 395  ms.  

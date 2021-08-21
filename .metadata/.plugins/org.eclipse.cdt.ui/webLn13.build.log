@@ -1,8 +1,0 @@
-
-**** Rebuild of configuration Debug for project webLn13 ****
-
-**** Internal Builder is used for build               ****
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -oadditionalTable.o ..\additionalTable.c
-gcc -owebLn13.exe additionalTable.o
-Build complete for project webLn13
-Time consumed: 494  ms.  

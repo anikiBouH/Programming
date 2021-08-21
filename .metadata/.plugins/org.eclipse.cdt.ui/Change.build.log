@@ -1,8 +1,0 @@
-
-**** Rebuild of configuration Debug for project Change ****
-
-**** Internal Builder is used for build               ****
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -otest_change.o ..\test_change.c
-gcc -oChange.exe test_change.o
-Build complete for project Change
-Time consumed: 408  ms.  

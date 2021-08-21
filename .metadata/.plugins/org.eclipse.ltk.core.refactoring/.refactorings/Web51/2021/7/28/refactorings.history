@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Web51/ffff&apos; to &apos;ffff.c&apos;" description="Rename resource &apos;ffff&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ffff" name="ffff.c" stamp="1625816403739" updateReferences="true"/>
-</session>

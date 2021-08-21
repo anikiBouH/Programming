@@ -1,8 +1,0 @@
-
-**** Rebuild of configuration Debug for project lesson10 ****
-
-**** Internal Builder is used for build               ****
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -ohomeWork.o ..\homeWork.c
-gcc -olesson10.exe homeWork.o
-Build complete for project lesson10
-Time consumed: 385  ms.  

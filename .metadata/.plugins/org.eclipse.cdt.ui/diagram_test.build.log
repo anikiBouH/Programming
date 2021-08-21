@@ -1,8 +1,0 @@
-
-**** Rebuild of configuration Debug for project diagram_test ****
-
-**** Internal Builder is used for build               ****
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -otest_diagram.o ..\test_diagram.c
-gcc -odiagram_test.exe test_diagram.o
-Build complete for project diagram_test
-Time consumed: 620  ms.  

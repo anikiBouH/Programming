@@ -1,8 +1,0 @@
-
-**** Rebuild of configuration Debug for project SOC ****
-
-**** Internal Builder is used for build               ****
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -onewCTemplate.o ..\newCTemplate.c
-gcc -oSOC.exe newCTemplate.o
-Build complete for project SOC
-Time consumed: 497  ms.  

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;diagram_test/test_diagram&apos; to &apos;test_diagram.c&apos;" description="Rename resource &apos;test_diagram&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="test_diagram" name="test_diagram.c" stamp="1625520970609" updateReferences="true"/>
-</session>

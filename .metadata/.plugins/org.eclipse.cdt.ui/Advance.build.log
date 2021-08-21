@@ -1,8 +1,0 @@
-
-**** Rebuild of configuration Debug for project Advance ****
-
-**** Internal Builder is used for build               ****
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -oadvance.o ..\advance.c
-gcc -oAdvance.exe advance.o
-Build complete for project Advance
-Time consumed: 2059  ms.  

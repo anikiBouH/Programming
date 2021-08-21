@@ -1,8 +1,0 @@
-
-**** Rebuild of configuration Debug for project func_call ****
-
-**** Internal Builder is used for build               ****
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -ocall_func.o ..\call_func.c
-gcc -ofunc_call.exe call_func.o
-Build complete for project func_call
-Time consumed: 447  ms.  

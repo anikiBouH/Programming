@@ -1,8 +1,0 @@
-
-**** Rebuild of configuration Debug for project lesson9 ****
-
-**** Internal Builder is used for build               ****
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -otest_switch.o ..\test_switch.c
-gcc -olesson9.exe test_switch.o
-Build complete for project lesson9
-Time consumed: 400  ms.  

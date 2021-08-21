@@ -1,8 +1,0 @@
-
-**** Rebuild of configuration Debug for project Web51 ****
-
-**** Internal Builder is used for build               ****
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -offff.o ..\ffff.c
-gcc -oWeb51.exe ffff.o
-Build complete for project Web51
-Time consumed: 556  ms.  
