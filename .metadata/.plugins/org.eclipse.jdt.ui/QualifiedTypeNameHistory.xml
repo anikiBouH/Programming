@@ -2,4 +2,14 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="lesson16.JavaFunction"/>
     <fullyQualifiedTypeName name="lesson17.MyMethods"/>
+    <fullyQualifiedTypeName name="Methods"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="jdk.internal.misc.FileSystemOption"/>
+    <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="sun.jvm.hotspot.code.ConstantOopReadValue"/>
+    <fullyQualifiedTypeName name="coordinates"/>
+    <fullyQualifiedTypeName name="jdk.tools.jlink.resources.plugins"/>
+    <fullyQualifiedTypeName name="Function"/>
 </qualifiedTypeNameHistroy>
