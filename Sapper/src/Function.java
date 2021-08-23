@@ -49,12 +49,21 @@ public class Function {
 	}
 	
 	public static void printField(int[][] field) {
-		for(int j = 0; j < field.length; j++) {
-			for(int i = 0; i< field[j].length; i++)
-			{
-				System.out.print(field[j][i]);
-			}
-			System.out.println();
+		System.out.println("***FIELD***");
+//		for(int j = 0; j < field.length; j++) {
+//			for(int i = 0; i< field[j].length; i++)
+//			{
+//				System.out.print(field[j][i]);
+//			}
+//			System.out.println();
+//		}
+//		System.out.println();
+//		field.
+		for (int[] a : field) {
+		 for (int i : a) {
+		  System.out.print(i);
+		 }
+		 System.out.println();
 		}
 	}
 }
