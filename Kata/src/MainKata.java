@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 
 import java.util.*;
 
@@ -18,13 +17,16 @@ public class MainKata {
 		
 	}
 	
-	public static int[] multipleOfIndex(int[] array) {
+	public static Integer[] multipleOfIndex(int[] array) {
 		List<Integer> list = new ArrayList<Integer>() ;
 		for(int i = 1; i<array.length - 1; i++)
 		{
 			if (array[i] % i == 0) list.add(array[i]);
 		}
-		return list.toArray();//your code;
+		
+		Integer[] arr = new Integer[list.size()];
+		arr = list.toArray(arr);
+		return arr;//your code;
 	  }
 	
 	 public static int quarterOf(int month) {
